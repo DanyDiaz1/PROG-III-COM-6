@@ -48,7 +48,7 @@ public abstract class Media implements IMedia, Comparable<Media> {
 
     @Override
     public int compareTo(Media otra) {
-        return this.titulo.compareTo(otra.getTitulo());
+        return this.identificador.compareTo(otra.getIdentificador());
     }
 
     @Override
