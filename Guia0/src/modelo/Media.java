@@ -14,13 +14,24 @@ public abstract class Media implements IMedia, Comparable<Media> {
     }
 
     @Override
-    public String getTitulo() { return titulo; }
+    public String getTitulo() {
+        return titulo;
+    }
+
     @Override
-    public String getCreador() { return creador; }
+    public String getCreador() {
+        return creador;
+    }
+
     @Override
-    public String getGenero() { return genero; }
+    public String getGenero() {
+        return genero;
+    }
+
     @Override
-    public String getIdentificador() { return identificador; }
+    public String getIdentificador() {
+        return identificador;
+    }
 
 
     public void setTitulo(String titulo) {
@@ -37,7 +48,7 @@ public abstract class Media implements IMedia, Comparable<Media> {
 
     @Override
     public int compareTo(Media otra) {
-        return this.titulo.compareTo(otra.getIdentificador());
+        return this.titulo.compareTo(otra.getTitulo());
     }
 
     @Override
