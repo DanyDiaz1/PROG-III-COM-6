@@ -8,7 +8,8 @@ public class SupplierExample {
          * 📦 Supplier
          * 💡 No recibe ningún valor, pero retorna un resultado.
          */
-
+        Supplier<Double> suplier = Math::random;
+        System.out.println(suplier.get());
 
     }
 }

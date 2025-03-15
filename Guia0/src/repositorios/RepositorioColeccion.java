@@ -38,12 +38,7 @@ public class RepositorioColeccion<T extends Media> implements IRepositorio<T> {
 
     public List<T> obtenerTodos() {
         List<T> listaOrdenada = new ArrayList<>(coleccion);
-        listaOrdenada.sort(new Comparator<T>() {
-            @Override
-            public int compare(T m1, T m2) {
-                return m1.getTitulo().compareTo(m2.getTitulo());
-            }
-        });
+        listaOrdenada.sort((m1, m2) -> m1.getTitulo().compareTo(m2.getTitulo()));
         return listaOrdenada;
     }
 

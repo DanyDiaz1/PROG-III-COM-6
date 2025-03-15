@@ -9,5 +9,8 @@ public class BiConsumerExample {
          * 💡 Recibe dos valores y no retorna nada.
          */
 
+        BiConsumer<String,String> biConsumer = (p1,p2)-> System.out.println(p1 + " " + p2);
+        biConsumer.accept("Hola","Mundo");
+
     }
 }

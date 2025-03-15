@@ -9,6 +9,8 @@ public class FunctionExample {
          * 💡 Recibe un valor y retorna un resultado.
          */
 
+        Function<Integer,String> function = num-> "El numero es: "+num;
 
+        System.out.println(function.apply(15));
     }
 }
