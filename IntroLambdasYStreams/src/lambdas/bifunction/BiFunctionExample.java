@@ -1,4 +1,4 @@
-package bifunction;
+package lambdas.bifunction;
 
 import java.util.function.BiFunction;
 

@@ -1,4 +1,4 @@
-package biconsumer;
+package lambdas.biconsumer;
 
 import java.util.function.BiConsumer;
 
