@@ -4,7 +4,7 @@ import java.util.NoSuchElementException;
 
 public class Main {
     public static void main(String[] args) {
-        String codigo = "999";  // Producto inexistente
+        String codigo = "123";  // Producto inexistente
         Producto producto = Inventario.buscarProducto(codigo)
                 .orElseThrow(() -> new NoSuchElementException("Producto no encontrado"));
 

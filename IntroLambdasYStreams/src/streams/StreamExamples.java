@@ -14,15 +14,15 @@ public class StreamExamples {
 
 //        // 🚀 map(): Transforma los elementos aplicando una función.
 //        names.stream()
-//                .map(String::toUpperCase)
+//                .map(String::length)
 //                .forEach(System.out::println);
-//
+
 
 //        // 📊 sorted(): Ordena los elementos del stream.
 //        names.stream()
 //                .sorted()
 //                .forEach(System.out::println);
-//
+
 
 //        // 💥 forEach(): Aplica una acción a cada elemento.
 //        names.stream()
@@ -33,14 +33,14 @@ public class StreamExamples {
 //        String concatenatedNames = names.stream()
 //                .reduce("", (a, b) -> a + " " + b);
 //        System.out.println("Nombres concatenados: " + concatenatedNames);
-//
+
 
 //        // 📦 toList(): Recoge los elementos en una colección.
 //        List<String> namesStartingWithA = names.stream()
 //                .filter(name -> name.startsWith("A"))
 //                .toList();
 //        System.out.println("Nombres que empiezan con A: " + namesStartingWithA);
-//
+
 
 //        // ✨ distinct(): Elimina los elementos duplicados.
 //        List<String> duplicates = Arrays.asList("Ana", "Luis", "Luis", "Maria", "Pedro");
@@ -53,25 +53,25 @@ public class StreamExamples {
 //        names.stream()
 //                .limit(3)
 //                .forEach(System.out::println);
-//
+
 
 //        // 🔄 skip(): Omite un número específico de elementos.
 //        names.stream()
 //                .skip(2)
 //                .forEach(System.out::println);
-//
+
 
 //        // 🔍 anyMatch(): Verifica si algún elemento cumple una condición.
 //        boolean anyStartsWithP = names.stream()
 //                .anyMatch(name -> name.startsWith("P"));
 //        System.out.println("¿Hay algún nombre que empiece con P?: " + anyStartsWithP);
 //
-
+//
 //        // 🔒 allMatch(): Verifica si todos los elementos cumplen una condición.
 //        boolean allHaveMoreThan3Letters = names.stream()
 //                .allMatch(name -> name.length() > 3);
 //        System.out.println("¿Todos los nombres tienen más de 3 letras?: " + allHaveMoreThan3Letters);
-//
+
         
 //        // ❌ noneMatch(): Verifica si ningún elemento cumple una condición.
 //        boolean noneStartsWithZ = names.stream()

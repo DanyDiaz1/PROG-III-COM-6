@@ -11,9 +11,17 @@ public class Producto {
         this.precio = precio;
     }
 
-    public String getNombre() { return nombre; }
-    public String getCategoria() { return categoria; }
-    public double getPrecio() { return precio; }
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
 
     @Override
     public String toString() {

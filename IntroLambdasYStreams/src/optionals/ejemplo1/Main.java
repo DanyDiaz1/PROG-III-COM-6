@@ -7,7 +7,7 @@ public class Main {
         Optional<Usuario> usuario = UsuarioRespository.buscarPorNombre("Ana");
         usuario.ifPresent(u -> System.out.println("Usuario encontrado: " + u.getNombre()));
 
-        Optional<Usuario> usuarioNoExiste = UsuarioRespository.buscarPorNombre("Pedro");
+        Optional<Usuario> usuarioNoExiste = UsuarioRespository.buscarPorNombre("Carlos");
         System.out.println("Usuario encontrado: " + usuarioNoExiste.orElse(new Usuario("Invitado")).getNombre());
     }
 }

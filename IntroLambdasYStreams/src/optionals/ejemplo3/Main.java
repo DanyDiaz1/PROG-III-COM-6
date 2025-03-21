@@ -6,7 +6,7 @@ import java.util.Optional;
 
 public class Main {
     public static void main(String[] args) {
-        List<Integer> numeros = Arrays.asList(3, 7, 9, 12, 15, 18);
+        List<Integer> numeros = Arrays.asList(3, 7, 9, 11, 15, 17);
 
         Optional<Integer> primerPar = numeros.stream()
                 .filter(n -> n % 2 == 0)
