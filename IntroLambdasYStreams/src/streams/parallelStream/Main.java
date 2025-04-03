@@ -12,10 +12,10 @@ public class Main {
                 new Producto("Monitor", 300)
         );
 
-        List<Double> preciosConImpuestos = productos.parallelStream()
+        productos.parallelStream()
                 .map(Producto::getPrecioConImpuesto)
-                .toList();
+                .forEach(System.out::println);
 
-        preciosConImpuestos.forEach(System.out::println);
+        //preciosConImpuestos.forEach(System.out::println);
     }
 }

@@ -13,9 +13,9 @@ public class StreamExamples {
 //                .forEach(System.out::println);
 
 //        // 🚀 map(): Transforma los elementos aplicando una función.
-//        names.stream()
-//                .map(String::length)
-//                .forEach(System.out::println);
+        //names.stream()
+               // .map(String::length)
+               // .forEach(System.out::println);
 
 
 //        // 📊 sorted(): Ordena los elementos del stream.
@@ -30,9 +30,9 @@ public class StreamExamples {
 //
 
 //        // 🔗 reduce(): Combina todos los elementos en un solo valor.
-//        String concatenatedNames = names.stream()
-//                .reduce("", (a, b) -> a + " " + b);
-//        System.out.println("Nombres concatenados: " + concatenatedNames);
+        String concatenatedNames = names.stream()
+                .reduce("", (a, b) -> a + " " + b);
+        System.out.println("Nombres concatenados: " + concatenatedNames);
 
 
 //        // 📦 toList(): Recoge los elementos en una colección.
@@ -46,13 +46,18 @@ public class StreamExamples {
 //        List<String> duplicates = Arrays.asList("Ana", "Luis", "Luis", "Maria", "Pedro");
 //        duplicates.stream()
 //                .distinct()
+//                .limit(3)
 //                .forEach(System.out::println);
 //
 
 //        // 🎚️ limit(): Limita el número de elementos procesados.
-//        names.stream()
-//                .limit(3)
-//                .forEach(System.out::println);
+    long cantFiltrados= names.stream()
+            .filter(n->n.length()>3)
+            .map(String::toUpperCase)
+            .count();
+
+        System.out.println(cantFiltrados);
+
 
 
 //        // 🔄 skip(): Omite un número específico de elementos.

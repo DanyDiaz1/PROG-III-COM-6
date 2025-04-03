@@ -9,8 +9,8 @@ public class BiPredicateExample {
          * 💡 Recibe dos valores y devuelve un booleano (true o false).
          */
 
-        BiPredicate<String,String> biPredicate = (p1,p2)->{return p1.length()>p2.length();};
-        System.out.println(biPredicate.test("holaaaaaa","que tal"));
+        BiPredicate<String,String> biPredicate = (p1,p2)->p1.length()>p2.length();
         System.out.println(biPredicate.test("hola","que tal"));
+
     }
 }

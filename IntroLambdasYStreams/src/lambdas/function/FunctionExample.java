@@ -9,7 +9,7 @@ public class FunctionExample {
          * 💡 Recibe un valor y retorna un resultado.
          */
 
-        Function<Integer,String> function = num-> "El numero es: "+num;
+        Function<Integer,String> function = (num)->{return  "El numero es: "+num;};
 
         System.out.println(function.apply(15));
     }

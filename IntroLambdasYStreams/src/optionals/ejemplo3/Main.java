@@ -2,6 +2,7 @@ package optionals.ejemplo3;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Optional;
 
 public class Main {
@@ -12,6 +13,6 @@ public class Main {
                 .filter(n -> n % 2 == 0)
                 .findFirst();
 
-        System.out.println("Primer número par encontrado: " + primerPar.orElse(-1));
+        System.out.println("Primer número par encontrado: " + primerPar.orElseThrow(()->new NoSuchElementException("No se encontraron numeros pares")));
     }
 }

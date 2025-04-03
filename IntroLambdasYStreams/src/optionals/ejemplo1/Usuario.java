@@ -10,4 +10,6 @@ public class Usuario {
     public String getNombre() {
         return nombre;
     }
+
+
 }

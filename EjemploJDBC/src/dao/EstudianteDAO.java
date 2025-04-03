@@ -28,7 +28,9 @@ public class EstudianteDAO {
     public List<Estudiante> obtenerEstudiantes() {
         List<Estudiante> estudiantes = new ArrayList<>();
         String query = "SELECT * FROM estudiantes";
-        try (Statement stmt = connection.createStatement(); ResultSet rs = stmt.executeQuery(query)) {
+        try (Statement stmt = connection.createStatement();
+             ResultSet rs = stmt.executeQuery(query)) {
+
             while (rs.next()) {
                 estudiantes.add(new Estudiante(rs.getInt("id"), rs.getString("nombre"), rs.getInt("edad")));
             }
