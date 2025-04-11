@@ -10,10 +10,10 @@ public class App {
         EstudianteController controlador = new EstudianteController(estudianteDAO, estudianteVista);
 
         // Pruebas CRUD
-        //controlador.agregarEstudiante("Juan Pérez", 20);
+        //controlador.agregarEstudiante("Dany", 24);
         //controlador.listarEstudiantes();
-        controlador.actualizarEstudiante(1, "Edu", 26);
-        controlador.listarEstudiantes();
+        //controlador.actualizarEstudiante(1, "Edu", 26);
+        //controlador.listarEstudiantes();
         //controlador.eliminarEstudiante(1);
         //controlador.listarEstudiantes();
 
